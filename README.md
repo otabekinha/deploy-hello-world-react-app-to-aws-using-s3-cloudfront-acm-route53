@@ -63,7 +63,7 @@ Run following codes in your terminal
 4. Next we need to allow permission to our www bucket.
    - Click on #www.awsprojects.com bucket and go to Permissions and edit Block public access to off which means that you need to incheck it
    - Next you need to edit Bucket policy and use following code:
-   - Copy and Paste following code: []([https://gist.github.com/beabetterdevv...](https://gist.github.com/beabetterdevv/af24011e668df12756b9dae5c2b4ba46))
+   - Copy and Paste following code: https://gist.github.com/beabetterdevv/af24011e668df12756b9dae5c2b4ba46 
    - Make sure to change Bucket-Name with your www bucket name anda in this example I will also change it to #www.awsprojects.com
    - Next go to Properties and enable Static Website Hosting and for Hosting Type choose: Host a Static Website, For Index document write: index.html
    - Now to go your #awsprojects.com bucket (without www) and enable Static Website Hosting but this time change Hosting Type to Redirect request for an object, and for Host name choose www buckey which is #www.awsprojects.com, and for Protocol make sure to choose http for now and we will change it to https later
