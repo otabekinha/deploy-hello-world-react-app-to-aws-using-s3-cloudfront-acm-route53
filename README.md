@@ -46,18 +46,33 @@ Run following codes in your terminal
 2. Create Amazon S3 buckets. In this 2nd stage you're going to create two S3 buckets one with www and one with actual name of your website
 
 - Create your first bucket with www and make sure to choose bucket name same as your website like:
-  - Bucket name: I will use awsprojects.com as an  example but make sure to choose same name as your website name.
-  - Bucket name: www.awsprojects.com
-  - Leave all the default configurations and we will comeback again later in the following steps
+   - Bucket name: I will use awsprojects.com as an  example but make sure to choose same name as your website name.
+   - Bucket name: www.awsprojects.com
+   - Leave all the default configurations and we will comeback again later in the following steps
 
 - Create your second bucket without www:
-  - Bucket name: awsprojects.com
-  - Leave all the default configurations
+   - Bucket name: awsprojects.com
+   - Leave all the default configurations
 
 3. Upload your React App build files to www bucket:
-  - Go to your www.awsprojects.com bucket and upload all the files by going to demo-app folder -> build and make to upload static folder seperately
-  - Here is an example image that shows you uploaded React app build files:
+   - Go to your www.awsprojects.com bucket and upload all the files by going to demo-app folder -> build and make to upload static folder seperately
+   - Here is an example image that shows you uploaded React app build files:
+    
   ![](react-app.png)
+
+4. Next we need to allow permission to our www bucket.
+   - Click on www.awsprojects.com bucket and go to Permissions and edit Block public access to off which means that you need to incheck it
+   - Next you need to edit Bucket policy and use following code:
+   - Copy and Paste following code: []([https://gist.github.com/beabetterdevv...](https://gist.github.com/beabetterdevv/af24011e668df12756b9dae5c2b4ba46))
+   - Make sure to change Bucket-Name with your www bucket name anda in this example I will also change it to www.awsprojects.com
+   - Next go to Properties and enable Static Website Hosting and for Hosting Type choose: Host a Static Website, For Index document write: index.html
+   - Now to go your awsprojects.com bucket (without www) and enable Static Website Hosting but this time change Hosting Type to Redirect request for an object, and for Host name choose www buckey which is www.awsprojects.com, and for Protocol make sure to choose http for now and we will change it to https later
+
+5. Create DNS records in Route 53
+   - First make sure register domain name and if you have not watch this video: [](https://www.youtube.com/watch?v=5IfDzpkLlYY)
+   - Create DNS records and in order to do that first for Routing policy select: Simple Routing and define simple record and follow this image:
+   - []()
+      
 
  
   
