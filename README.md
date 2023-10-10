@@ -126,7 +126,7 @@ Run following codes in your terminal
 10. Hope you have successefully finisjed your project 
    - Check your website and make sure you see lock which means we are using https and our connection is secure
    - Congratilations!! Hope you have finished your project
-![]()
+![](react.svg)
 
 
 # Resources that I used:
