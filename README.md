@@ -47,15 +47,15 @@ Run following codes in your terminal
 
 - Create your first bucket with www and make sure to choose bucket name same as your website like:
    - Bucket name: I will use awsprojects.com as an  example but make sure to choose same name as your website name.
-   - Bucket name: #www.awsprojects.com
+   - Bucket name: www.awsprojects.com
    - Leave all the default configurations and we will comeback again later in the following steps
 
 - Create your second bucket without www:
-   - Bucket name: #awsprojects.com
+   - Bucket name: awsprojects.com
    - Leave all the default configurations
 
 3. Upload your React App build files to www bucket:
-   - Go to your #www.awsprojects.com bucket and upload all the files by going to demo-app folder -> build and make to upload static folder seperately
+   - Go to your www.awsprojects.com bucket and upload all the files by going to demo-app folder -> build and make to upload static folder seperately
    - Here is an example image that shows you uploaded React app build files:
     
   ![](react-app.png)
@@ -66,7 +66,7 @@ Run following codes in your terminal
    - Copy and Paste following code: https://gist.github.com/beabetterdevv/af24011e668df12756b9dae5c2b4ba46 
    - Make sure to change Bucket-Name with your www bucket name anda in this example I will also change it to #www.awsprojects.com
    - Next go to Properties and enable Static Website Hosting and for Hosting Type choose: Host a Static Website, For Index document write: index.html
-   - Now to go your #awsprojects.com bucket (without www) and enable Static Website Hosting but this time change Hosting Type to Redirect request for an object, and for Host name choose www buckey which is #www.awsprojects.com, and for Protocol make sure to choose http for now and we will change it to https later
+   - Now to go your #awsprojects.com bucket (without www) and enable Static Website Hosting but this time change Hosting Type to Redirect request for an object, and for Host name choose www buckey which is www.awsprojects.com, and for Protocol make sure to choose http for now and we will change it to https later
 
 5. Create DNS records in Route 53
    - First make sure register domain name and if you have not watch this video: [](https://www.youtube.com/watch?v=5IfDzpkLlYY)
@@ -130,7 +130,7 @@ Run following codes in your terminal
 
 # Resources that I used:
 
-   - Simple DevOps (Watch Project Overview  Video from Me): [Project Overview](https://youtu.be/93I8bx1MKwo?si=Sq0LDJCRK6sLxxuD) 
-   - Be a Better Dev (Watch Full Project Video): [Full Project Video](https://www.youtube.com/watch?v=mls8tiiI3uc)
+   - Simple DevOps (Watch Project Overview  Video from Me): https://youtu.be/93I8bx1MKwo?si=Sq0LDJCRK6sLxxuD
+   - Be a Better Dev (Watch Full Project Video): https://www.youtube.com/watch?v=mls8tiiI3uc
  
   
