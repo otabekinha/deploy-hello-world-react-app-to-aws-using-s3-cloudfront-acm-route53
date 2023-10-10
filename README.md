@@ -130,7 +130,7 @@ Run following codes in your terminal
 
 # Resources that I used:
 
-   - Simple DevOps (Watch Project Overview  Video from Me): [](https://youtu.be/93I8bx1MKwo?si=Sq0LDJCRK6sLxxuD) 
-   - Be a Better Dev (Watch Full Project Video): [](https://www.youtube.com/watch?v=mls8tiiI3uc)
+   - Simple DevOps (Watch Project Overview  Video from Me): [Project Overview](https://youtu.be/93I8bx1MKwo?si=Sq0LDJCRK6sLxxuD) 
+   - Be a Better Dev (Watch Full Project Video): [Full Project Video](https://www.youtube.com/watch?v=mls8tiiI3uc)
  
   
